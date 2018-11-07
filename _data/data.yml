@@ -1,0 +1,59 @@
+main:
+    title: "AyamiH Consultants"
+    description: A Team of Business Advisors, Software Engineers and Data Scientists focussed on providing Data Driven Solutions to You.
+    email: info@ayamih.com
+    about:
+        - line: We Provide Business Solutions to your Business Problems by analysing your Data and Automating your Processes.
+        - line: We are a team of professional Consultants that include Business Advisors, Software Engineers and Data Scientists.
+        - line: Our team will work closely with you to make sure you know exactly what you are getting before any contracts are signed or invoices sent.
+        
+what-we-do: # Cannot edit this since the correction to the 3 sections for text alignment.
+    - title: Analytics
+      description: We use a mix of mathematics, statistics, predictive analytics and machine learning techniques to derive meaningful patterns and knowledge from Data. We analyse your requirements and deploy the right technology, stacks and tools to unlock hidden business opportunities and provide Insights from your Data.
+      image: /assets/img/analytics.jpg
+      link: /analytics/
+      
+    - title: Robotic Process Automation
+      description: Automation can assist in Doing More with Software. Intelligent deployment of Automation in conjunction with cognitive technologies such as Artificial Intelligence, Machine Learning, and Sentiment Analysis can maximize your returns in the path to Digital Transformation.
+
+      image: /assets/img/robotic-process-automation.jpg
+      link: /robotic-process-automation/
+      
+    - title: Algorithmic Trading
+      description: Time series analysis lay at the Core of the strategy that you want to deploy. The ability to look forward and backward, to drill down from years to days to seconds and see data trends over different periods of time is essential for any Day Trading Firm or Hedge Fund. We halp you to analyze and visualize trends by any timeframe and easily perform time comparisons.
+
+      image: /assets/img/algorithmic-trading.jpg
+      link: /algorithmic-trading/
+
+case-studies:
+    - title: Case Study 01
+      description: The financial markets in India are heavily regulated and the Hedge funds in India are a subset of the Alternative Investment Funds. The client however was already providing Trading Application Development services for retail traders in Thailand and India. And with deregulation announced by the Government of India towards improving the ease of doing business, the client saw an opportunity for expanding into the hedge funds marketplace.
+      link: /casestudies/
+      
+    - title: Case Study 02
+      description: This Architectural firm located in the MA state of USA was keen to use the raw data from various sources and generate highly qualified and precise leads for prospecting by the sales team for a given geography.
+      link: /casestudies/
+
+faq:
+    - question: What kind of clients do you work with?
+      answer: Some of our clients include Hedge Funds, Retail Fashion Boutique, traditional Software Companies, Architectural Design Firms and Emerging Startup firms. Our background and experience gives us the opportunity to provide our High-End services across the gamut of Industry Verticals. 
+      
+    - question: What Technologies do you have expertise in?
+      answer: We work within the framework of our clients existing Ecosystems. We have core competencies in many leading systems like Machine Learning, Google Analytics, Tableau and many more.
+      
+    - question: How do you bill for your services?
+      answer: As a rule of thumb, we DO NOT bill by the hour. The system of hourly billing is obsolete and unfair to our clients. We opt for a Project Based Fee or Maintenance based pricing system. As a client of AyamiH Consultants, you will always know the costs upfront with no surprising monthly invoices.
+
+
+testimonials:
+    - name: Admin
+      title: StocksOnFire
+      testimonial: The folks at AyamiH are great people to work with for developing Reliable Trading Systems and Servicing Algorithmic Trading Platforms. They helped us with different projects which were delivered with top Quality Results. I will recommend their services to everyone looking to develop Automated Trading systems or Algorithms for the Indian Stock Markets.
+      
+    - name: Richard Nilsson
+      title: Founder, Nilsson Architects
+      testimonial: Pavan has been incredibly effective in sourcing highly qualified leads for us and has improved our business development and marketing work flows remarkably. We expect to ask Pavan to help us again in the future, and we hope sincerely that he will be available to consult with us again. I recommend Pavan highly and without reservation.    
+   
+    - name: CTO of a Hedge Fund
+      title: 
+      testimonial: I am pleased with the fresh Insights provided by the team at AyamiH in helping us develop a Risk Management Data Model in lieu of the Black-Scholes Model for Options Pricing.

@@ -1,0 +1,25 @@
+<section class="section bg-secondary" id="case-studies">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+            <h2 class="mb-5 text-center underline-sm"><span>Case Studies</span></h2>
+              <div class="row">
+               {% for item in site.data.data.case-studies %}
+                <div class="col-sm">
+                  <div class="card shadow">
+                      <!-- <img class="card-img-top" src="{{site.baseurl}}{{item.image}}" alt="{{item.title}}" > -->
+                      <div class="card-body">
+                          <h4 class="text-center card-title">{{item.title}}</h4>
+                          <hr class="card-hr">
+                          <p class="card-text">{{item.description | truncate: 200}}</p>
+                          <a href="{{site.baseurl}}{{item.link}}"><button type="button" class="btn btn-primary btn-block">Read More</button></a>
+                      </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>

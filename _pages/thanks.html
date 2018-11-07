@@ -1,0 +1,36 @@
+---
+layout: default
+title: 'Thank You'
+permalink: /thank-you/
+---
+
+
+
+<div class="" style="min-height: 400px; margin-top: 15rem;">
+
+<div class="container">
+          <div class="row">
+              <div class="col-12 text-center">
+                 <h1 class="page-header">{{page.title}}</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                   <p class="text-center">Thanks for contacting us. We will get back to you as soon as possible.</p>
+                   <p class="text-center italic">Redirecting to home page...</p>
+                   <p class="text-center"><progress class="" value="0" max="10" id="progressBar"></progress></p>
+              </div>
+          </div>
+      </div>
+
+</div>
+
+
+<script>
+var timeleft = 10;
+var downloadTimer = setInterval(function(){
+  document.getElementById("progressBar").value = 10 - --timeleft;
+  if(timeleft <= 0)
+    clearInterval(downloadTimer);
+},1000);
+</script>

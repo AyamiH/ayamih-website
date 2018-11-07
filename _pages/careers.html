@@ -1,0 +1,92 @@
+---
+layout: page
+title: Careers
+permalink: /careers/
+careers:
+  - position: Data Scientist
+    location: North Bangalore or Remote
+    description: "Come join AyamiH as a Data Scientist in the Data Analytics & Data Science team.  We are looking for creative problem solvers with a passion to deliver data-driven insights. The successful candidate will have a strong combination of both technical data skills and excellent communication skills."
+    foot-note: "AyamiH Consultants is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, religion, caste, nationality colour, sex, physical disability, age etc."
+    link: "Apply%20for%20Data%20Scientist%20Position&body=I%20am%20interested%20in%20the%20Data%20Scientist%20Position.%20I%20have%20my%20details%20mentioned%20in%20the%20email%20and%20also%20attached%20my%20resume%20with%20this%20email."
+    responsibilities:
+     - res: Analyse real world data and propose novel solutions to user challenges
+     - res: Build tools to support experimentation and data analysis
+     - res: Implement pipelines to prepare and learn from real world data
+     - res: Design experiments to understand user behaviour and make data driven decisions
+     - res: Ship models to production to power user facing features
+     - res: Work as part of a collaborative team to deliver projects from inception to end user
+     
+    qualifications:
+     - qual: Bachelors degree in computer science or closely related field, Masters or PhD preferred
+     - qual: 2+ years experience in production modelling or software development
+     - qual: "Production experience in at least one of the following<ul><li>Machine Learning, Deep Learning a plus</li><li>Natural Language Processing</li><li>Text Mining</li></ul>"
+     
+    
+  - position: Solution Consultant
+    location: North Bangalore or Remote
+    description: "Come join AyamiH as a Solutions Consultant in the Business Analysis team.  We are looking for a candidate who will drive our partners on-boarding & education and act as a trusted advisor to shape the value proposition and vision for target account sales."
+    foot-note: "AyamiH Consultants is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, religion, caste, nationality colour, sex, physical disability, age etc."
+    link: "Apply%20for%20Solution%20Consultant%20Position&body=I%20am%20interested%20in%20the%20Data%20Scientist%20Position.%20I%20have%20my%20details%20mentioned%20in%20the%20email%20and%20also%20attached%20my%20resume%20with%20this%20email."
+    responsibilities:
+     - res: Lead technically-oriented meetings
+     - res: Respond to RFI/RFP and security questionnaires
+     - res: Prioritize opportunities and apply appropriate resources
+     - res: Build and present customized demos
+     - res: Liaise with the BA  team
+     
+    qualifications:
+     - qual: 5+ years developer experience with enterprise software (eg ERP, CRM, BPM, EAI/ETL)
+     - qual: Developer experience with Python language is plus
+     - qual: Knowledge of API and Data-interchange development (SOAP / REST / XML / JSON)
+     - qual: Knowledge of AI integration (eg IBM Watson, Microsoft Cognitive Services, Google Cloud)
+     - qual: Knowledge of IaaS and virtualization technologies (eg AWS, Azure, Citrix, VMware)
+     - qual: Business level+ English skills
+     - qual: Good documentation skills
+---
+
+
+<div class="row pb-md pt-sm">
+    <div class="col-lg-8 offset-md-2">
+       <div class="alert alert-success big text-center">
+        We are hiring...!
+   </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="careers-page">
+    {% for item in page.careers %}
+    <div class="row pb-md align-items-center">
+        <div class="col-12">
+            <div class="card shadow mb-sm">
+               <div class="card-body">
+                    <h4 class="double-dashed">Position: {{item.position}}</h4>
+                    <p><strong>Location: </strong>{{item.location}}</p>
+                    <p><strong>Description:</strong> {{item.description}}</p>
+                    <p><strong>Responsibilities: </strong></p>
+                    <ul>
+                    {% for i in item.responsibilities %}
+                    	<li>{{i.res}}</li>
+                    {% endfor %}
+                    </ul>
+                    
+                    <p><strong>Qualifications: </strong></p>
+                     <ul>
+                    {% for i in item.qualifications %}
+                    	<li>{{i.qual}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>{{item.foot-note}}</p>
+                </div>
+                
+            </div>
+            <a href="mailto:{{site.data.data.main.email}}?&subject={{item.link}}" class="btn btn-success">Apply</a>
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>

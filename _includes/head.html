@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="{{site.title}}">
+  <title>{{site.title}}</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{site.baseurl}}/favicon-32x32.ico" type="image/x-icon">
+  <link rel="icon" href="{{site.baseurl}}/favicon-32x32.ico" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link href="{{site.baseurl}}/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- Argon CSS -->
+  <link type="text/css" href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  
+  {% if page.url == '/products/' %}
+  <link rel="stylesheet" href="{{site.baseurl}}/bot/botui.min.css" />
+  <link rel="stylesheet" href="{{site.baseurl}}/bot/botui-theme-default.css" />
+  <link rel="stylesheet" href="{{site.baseurl}}/bot/bot.css">
+  {% endif %}
+  
+  {% if page.url == '/thank-you/' %}
+  <meta http-equiv="refresh" content="10;url={{site.baseurl}}/" />
+  {% endif %}
+  
+</head>

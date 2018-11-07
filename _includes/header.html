@@ -1,0 +1,87 @@
+<header class="header-global" {% if page.url == '/' %}id="home"{% endif %}>
+    <nav id="navbar-main" class="navbar navbar-main fixed-top navbar-expand-lg navbar-light" {% if page.url != '/' %}style="background-color: #5e72e4"{% endif %}>
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="{{site.baseurl}}/">
+          <img src="{{site.baseurl}}/assets/img/ayamiH-logo.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="{{site.baseurl}}/">
+                  <img src="{{site.baseurl}}/assets/img/ayamiH-logo-blue.svg">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+            
+            <li class="nav-item">
+                    <a class="nav-link nav-link-icon{%if page.url == '/' %} bold{% endif %}" href="{{site.baseurl}}/" >Home</a>
+            </li>
+            
+             <li class="nav-item dropdown">
+              <a href="#" class="nav-link"  role="button" data-toggle="dropdown" aria-expanded="false">
+                <!-- <i class="ni ni-ui-04 d-lg-none"></i> -->
+                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                <span class="nav-link-inner--text{%if page.url == '/analytics/' or page.url == '/robotic-process-automation/' or page.url == '/algorithmic-trading/' %} bold{% endif %}">Services</span>
+              </a>
+              <div class="dropdown-menu">
+                 <div class="dropdown-menu-inner">
+                 {% for item in site.data.data.what-we-do %}
+                <a href="{{site.baseurl}}{{item.link}}" class="dropdown-item {%if page.url == item.link %} bold{% endif %}">{{item.title}}</a>
+                {% endfor %}
+              </div>
+             </div>
+            </li>
+            
+            
+        <!--  <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="#" data-toggle="scroll">Products</a>
+                         </li>
+                         
+             <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="#" data-toggle="scroll">Careers</a>
+                         </li> -->
+      <!--       <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="#testimonials" data-toggle="scroll">Testimonials</a>
+            </li>   -->
+            
+            <li class="nav-item">
+                    <a class="nav-link nav-link-icon{%if page.url == '/case-studies/' %} bold{% endif %}" href="{{site.baseurl}}/case-studies/">Case Studies</a>
+            </li>
+            
+            
+            <li class="nav-item">
+                    <a class="nav-link nav-link-icon{%if page.url == '/products/' %} bold{% endif %}" href="{{site.baseurl}}/products/">Products</a>
+            </li> 
+            
+            <li class="nav-item">
+                    <a class="nav-link nav-link-icon{%if page.url == '/careers/' %} bold{% endif %}" href="{{site.baseurl}}/careers/">Careers</a>
+            </li>
+            
+             <!-- <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="#faq" data-toggle="scroll">FAQ</a>
+                         </li>  -->         
+                
+       
+             <li class="nav-item">
+                    <a class="nav-link nav-link-icon{%if page.url == '/contact/' %} bold{% endif %}" href="{{site.baseurl}}/contact/">Contact</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </header>

@@ -1,0 +1,31 @@
+linkedin: https://www.linkedin.com/company/ayamih/
+github: https://github.com/AyamiH/
+
+
+
+
+# form-response: https://docs.google.com/forms/u/2/d/e/1FAIpQLSc-F8fLbeeXa13kjiJ3Y-0eEoT1oRtl3ZJ5o8tNtEcSJNtj4w/formResponse
+
+
+uel: https://ayamih.com
+#baseurl: "/website"
+
+
+
+include:
+    - _pages
+
+exclude:
+    - .sass-cache
+    
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []

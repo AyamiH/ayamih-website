@@ -1,0 +1,16 @@
+<section class="section" id="about-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h2 class="mb-5 text-center underline-sm"><span>About Us</span></h2>
+              <div class="row">
+               <div class="col-lg-8 offset-lg-2">
+                  {% for item in site.data.data.main.about %}
+                  <p>{{item.line}}</p>
+                  {% endfor %}
+               </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>

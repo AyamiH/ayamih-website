@@ -1,0 +1,42 @@
+---
+layout: page
+title: Case Studies
+permalink: /case-studies/
+case-studies:
+    - title: Case Study 01
+      
+      case: "<p>The financial markets in India are heavily regulated and the Hedge funds in India are a subset of the Alternative Investment Funds. The client however was already providing Trading Application Development services for retail traders in Thailand and India. And with deregulation announced by the Government of India towards improving the ease of doing business, the client saw an opportunity for expanding into the hedge funds marketplace. </p><p>This project was intended to integrate the existing profitable trading strategies used by retail traders of the client into a unified module with a clear and concise risk management system. This enables the client to expand the business into the hedge funds marketplace</p>"
+      
+      solution: "<p>As with any traditional software development, this project was no different. The sole exception in this project was the enhancement of the risk management model to test its suitability when any given financial instrument makes a New High or a New Low.</p><p>Traditional price determination systems in Hedge Funds are based on static models. As an example, the Black-Scholes model is traditionally used to predict the option prices. </p><p>We have created pure data based models to try and arrive at option prices. And since our client already had a repository of profit making strategies, we used these as the baseline for predictive analytics of price by generating data models that use supervised regression learning. We then back tested the results of both the traditional model and the ML generated model so as to determine the best model for the risk parameters. </p><p>This method to problem solving was very helpful in concluding that the ML generated model is best used only when the price movement of any stock has associated data points in the historical data.</p>"
+      
+      image: /assets/img/Case Study/ML-model-used.png
+      
+    - title: Case Study 02
+      
+      case: "<p>This Architectural firm located in the MA state of USA was keen to use the raw data from various sources and generate highly qualified and precise leads for prospecting by the sales team for a given geography.</p>"
+      
+      solution: "<p>We extracted raw data from various sources like the Assessor’s database, data from the Registry of Deeds, data from the Corporations Division of the state of Massachusetts, quandl, socrata open data etc. After extracting text from scanned documents and databases, we cleaned, processed and transformed the raw intangible text data from multiple sources to generate a dataframe. Next we developed machine learning algorithms to identify patterns and extract the potential owner/manager/developer. This data was then validated against the publicly available data from social media and other web resources to associate a name and/or a company with a given parcel of land.</p><p>Web scraping programs using scrapy were then developed and run to verify the leads and extract the contact information. This was finally qualified through a human resource thereby giving us 100% accurate Leads for prospecting.</p><p>Automation programs were then developed for increasing productivity and decreasing errors for the entry of data in CRM.</p>"
+      
+      image: /assets/img/Case Study/Nilsson-Flow-Diagram.jpeg
+      
+---
+
+<div class="case-studies-page">
+    {% for item in page.case-studies %}
+    <div class="row pb-md align-items-center">
+        <div class="col-12">
+            <div class="card shadow mb-sm">
+               <div class="card-body">
+                    <h4 class="double-dashed">{{item.title}}:</h4>
+                    <p><strong>Business Case:</strong></p>
+                    {{item.case}}
+                    <br>
+                    <p><strong>Solution:</strong></p>
+                    {{item.solution}}
+                    <img width="100%" src="{{site.baseurl}}{{item.image}}" alt="{{page.title}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

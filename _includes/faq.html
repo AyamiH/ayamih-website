@@ -1,0 +1,33 @@
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <!-- Basic elements -->
+        <h2 class="mb-5 text-center underline-sm"><span>Frequently Asked Questions</span></h2>
+          <div class="row">
+             <div class="panel-group p-m-10" style="width: 100%">
+               {% for item in site.data.data.faq %}
+             <div class="card shadow">
+                    <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question-{{forloop.index}}">
+                         <h4 class="panel-title" >
+                            <a class="ing white">Q: {{item.question}}</a>
+                      </h4>
+             
+                    <div id="question-{{forloop.index}}" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                             <h5><span class="label label-primary white">Answer</span></h5>
+                            <p class="white">{{item.answer}}</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+               {% endfor %}
+            
+            </div>
+            <!--/panel-group-->
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
