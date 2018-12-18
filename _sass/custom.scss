@@ -4,7 +4,7 @@
         @include media-query($on-laptop) {
             color: $text-color !important;
         }
-        
+
     }
     background-color: transparent;
 }
@@ -18,27 +18,27 @@
     a {
         color: $text-color;
     }
-    
+
     .card {
         margin-bottom: 30px;
     }
-	
+
 
 	.card-text {
 		height: 150px;
 		@include media-query($on-laptop) {
 			height: 230px;
 		}
-		
+
 		@include media-query($on-palm) {
 			height: auto;
 		}
-		
-		
-			
-		
+
+
+
+
 	}
-	
+
 	.card-title {
  		@include media-query($on-laptop) {
    	 		height: 25px;
@@ -50,7 +50,7 @@
 .card-hr {
     margin-bottom: 1em;
     margin-top: 1em;
-    
+
 }
 
 .shadow-hover {
@@ -63,7 +63,7 @@
 #faq {
     a {
         color: $brand-color;
-        
+
         &:hover {
             cursor: pointer;
         }
@@ -80,9 +80,9 @@
 #testimonials {
 
     .carousel-item  {
-        
+
         padding: 30px;
-        
+
         blockquote {
             padding: 30px;
             max-width: 80%;
@@ -103,7 +103,7 @@
                     font-size: 55%;
                     /* max-width: 100%; */
                 }
-                
+
             }
 
         @include media-query($on-palm) {
@@ -111,7 +111,7 @@
         }
       }
     }
-    
+
 }
 
 #case-studies {
@@ -142,12 +142,16 @@
 .navbar-toggler {
     .fa {
         color: white !important;
-    }    
-} 
+    }
+}
 
 
 .navbar-brand img {
-    height: 50px;
+    height: 60px;
+
+    &:hover {
+      opacity: 0.9;
+    }
 	@include media-query($on-palm) {
 		height: 40px;
 	}
@@ -218,7 +222,7 @@ a.white {
             background-size: cover;
             background-position: center;
             border-bottom: none !important;
-            
+
             @include media-query($on-palm) {
                 margin-bottom: 0.5em;
                 /* height: 360px; */
@@ -226,12 +230,12 @@ a.white {
             }
 
         }
-                 
+
         h4 {
             font-size: 110%;
             margin-bottom: 0;
             line-height: 1.6;
-            
+
             @include media-query($on-palm) {
                 line-height: 1.8;
                 border-top: none !important;
@@ -239,12 +243,12 @@ a.white {
             }
         }
     }
-    
+
     .col-md-8 {
         @include media-query($on-palm) {
             border: none !important;
         }
-        
+
         .content-body {
             @include media-query($on-palm) {
                 border: 1px solid #eee !important;
@@ -280,9 +284,9 @@ a.white {
 }
 
 .underline-sm {
-    
+
     position: relative;
-    
+
         &:after {
           position: relative;
           content: '';
@@ -324,21 +328,21 @@ a.white {
 	top: 40vh;
 	width: 100%;
 	max-width: 80%;
-	
+
 	.form-group, button {
 		margin: 20px auto;
 		width: 90%;
 	}
-	
+
 	h2 {
 		margin-bottom: 2rem;
-		
+
 		@include media-query($on-palm) {
 			margin-bottom: 10px;
 			font-size: 130%;
 		}
 	}
-	
+
 	@include media-query($on-palm) {
 		position: static !important;
 		max-width: 100%;
@@ -346,21 +350,21 @@ a.white {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+
 } */
 
 .free-report {
 	margin: 0 auto;
 	padding: 10px 20px !important;
-	
+
 	@include media-query($on-palm) {
-		
+
 	}
 }
 
 #form {
 	top: 20%;
-	
+
 	@include media-query($on-palm) {
 		top: 10%;
 	}
@@ -372,11 +376,11 @@ a.white {
 		margin-bottom: 30px;
 		cursor: pointer;
 	}
-	
+
 	.panel-heading.accordion-toggle.question-toggle {
     	padding: 20px;
 	}
-	
+
 }
 
 
@@ -408,22 +412,22 @@ a.btn.btn-danger.btn-lg.free-report {
 	span:first-child{
 		font-size: 1.4em;
 		font-weight: 400;
-		
+
 		@include media-query($on-palm) {
 			font-size: 1em;
 		}
-		
+
 	}
-	
+
 	span:last-child{
 		font-weight: 400;
 		font-size: 1.1em;
 		font-style: italic !important;
-		
+
 		@include media-query($on-palm) {
 			font-size: 0.9em;
 		}
-		
+
 	}
 
 }
