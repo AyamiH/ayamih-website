@@ -145,6 +145,19 @@
     }
 }
 
+.navbar-brand {
+  img, h1 {
+    display: inline-block;
+  }
+  h1 {
+    font-size: 1em;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
 
 .navbar-brand img {
     height: 40px;
