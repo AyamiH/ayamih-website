@@ -9,8 +9,6 @@ github: https://github.com/AyamiH/
 url: https://www.ayamih.com
 #baseurl: "/website"
 
-
-
 include:
     - _pages
 
