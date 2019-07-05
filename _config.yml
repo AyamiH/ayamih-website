@@ -1,5 +1,5 @@
 title: AyamiH Consultants
-
+description: A Data Analytics Store
 linkedin: https://www.linkedin.com/company/ayamih/
 github: https://github.com/AyamiH/
 
@@ -16,7 +16,7 @@ include:
 
 exclude:
     - .sass-cache
-    
+
 #optimization
 #compress.html
 compress_html:
