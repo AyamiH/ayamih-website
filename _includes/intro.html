@@ -1,70 +1,66 @@
 <div class="position-relative">
-      <section class="section-hero section-shaped my-0" style="background: linear-gradient(178.25279254442967deg, rgba(93, 124, 227,1) 14.801047120418849%,rgba(92, 123, 226,1) 14.801047120418849%,rgba(84, 61, 212,1) 93.75392670157068%); text-align: center">
-      <div class="row">
-      	<div class="col-md-12">
-      		<img class="header-bg" src="{{site.baseurl}}/assets/img/ayamih-header-full.svg" alt="">
-      	</div>
+  <section class="section-hero section-shaped my-0"
+    style="background: linear-gradient(178.25279254442967deg, rgba(93, 124, 227,1) 14.801047120418849%,rgba(92, 123, 226,1) 14.801047120418849%,rgba(84, 61, 212,1) 93.75392670157068%); text-align: center">
+    <div class="row">
+      <div class="col-md-12">
+        <img class="header-bg" src="{{site.baseurl}}/assets/img/ayamih-header-full.svg" alt="">
       </div>
-      <div class="row mt-sm pb-sm">
-      	<div class="col-md-12">
-      		<a class="btn btn-danger btn-lg free-report" href="" data-toggle="modal" data-target="#form"><span>Does Your Company Need AI?</span><br><span>SEND ME THE FREE REPORT</span></a>
-      	</div>
+    </div>
+    <div class="row mt-sm pb-sm">
+      <div class="col-md-12">
+        <a class="btn btn-danger btn-lg free-report" href="" data-toggle="modal" data-target="#form"><span>Does Your Company Need AI?</span><br><span>SEND ME THE FREE REPORT</span></a>
       </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="formlabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formlabel">Does Your Company Need AI?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="landing-form" action="https://formspree.io/info@ayamih.com" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+              <!-- <h2 class="white"><strong>Does Your Company Need AI?</strong></h2> -->
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-user-run success"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Your name" type="text" name="name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83 success"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Email address" type="email" name="_replyto" required>
+                </div>
+              </div>
+              <div class="form-group mb-4" style="display: none">
+                <input type="text" class="form-control form-control-alternative" name="Send Free Report" data-value="Does Your Company Need AI? Send me the Free Report" value="Does Your Company Need AI? Send me the Free Report">
+              </div>
+              <div>
+                <button type="submit" class="btn btn-success btn-round btn-block btn-lg">Send me the Free Report</button>
+              </div>
+            </form>
 
 
-
-<!-- Modal -->
-<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="formlabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="formlabel">Does Your Company Need AI?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-       	<script type="text/javascript">var submitted=false;</script>
- 						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{site.url}}{{site.baseurl}}/thank-you/';}"></iframe>
-                        <form class="landing-form" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSc-F8fLbeeXa13kjiJ3Y-0eEoT1oRtl3ZJ5o8tNtEcSJNtj4w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                       <!-- <h2 class="white"><strong>Does Your Company Need AI?</strong></h2> -->
-                        <div class="form-group">
-                          <div class="input-group input-group-alternative">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="ni ni-user-run success"></i></span>
-                            </div>
-                            <input class="form-control" placeholder="Your name" type="text" name="entry.1934382854" required>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="input-group input-group-alternative">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="ni ni-email-83 success"></i></span>
-                            </div>
-                            <input class="form-control" placeholder="Email address" type="email" name="entry.1560166587" required>
-                          </div>
-                        </div>
-                       <div class="form-group mb-4" style="display: none">
-                          <input type="text" class="form-control form-control-alternative" name="entry.318023944" data-value="Does Your Company Need AI? Send me the Free Report" value="Does Your Company Need AI? Send me the Free Report">
-                        </div>
-                        <div>
-                          <button type="submit" class="btn btn-success btn-round btn-block btn-lg">Send me the Free Report</button>
-                        </div>
-                        </form>
-
-
-      </div>
-      <!-- <div class="modal-footer">
+          </div>
+          <!-- <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div> -->
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
 
-   <!--      <div class="shape shape-style-1 shape-primary">
+    <!--      <div class="shape shape-style-1 shape-primary">
          <span class="span-150"></span>
           <span class="span-50"></span>
           <span class="span-50"></span>
@@ -78,7 +74,7 @@
         </div> -->
 
 
-<!--          <div class="container shape-container d-flex align-items-center">
+    <!--          <div class="container shape-container d-flex align-items-center">
           <div class="col px-0">
             <div class="row justify-content-center align-items-center">
               <div class="col-lg-7 text-center pt-lg">
@@ -101,5 +97,5 @@
                  </div> -->
 
 
-      </section>
-    </div>
+  </section>
+</div>
