@@ -320,7 +320,7 @@ a.white {
 }
 
 .header-bg {
-    height: 85vh;
+    height: 80vh;
     opacity: 0.8;
 	max-width: 100%;
     width: 100%;
@@ -425,7 +425,7 @@ a.white {
 a.btn.btn-danger.btn-lg.free-report {
 	span:first-child{
 		font-size: 1.4em;
-		font-weight: 400;
+		font-weight: 800;
 
 		@include media-query($on-palm) {
 			font-size: 1em;
@@ -436,7 +436,6 @@ a.btn.btn-danger.btn-lg.free-report {
 	span:last-child{
 		font-weight: 400;
 		font-size: 1.1em;
-		font-style: italic !important;
 
 		@include media-query($on-palm) {
 			font-size: 0.9em;
